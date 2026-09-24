@@ -1,0 +1,18 @@
+# Local controller data, credentials, and private development indexes
+config.json
+.env*
+*.pem
+*.key
+*.log
+*.db
+*.sqlite*
+.workflow/
+.maestroignore
+.pi/
+.codegraph/
+
+# Generated files
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store

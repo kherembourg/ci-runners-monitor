@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>local.ci-runners-monitor</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/absolute/path/to/ci-runners-monitor/server.py</string>
+    <string>--config</string>
+    <string>/absolute/path/to/ci-runners/config.json</string>
+    <string>--port</string><string>8765</string>
+  </array>
+  <key>WorkingDirectory</key><string>/absolute/path/to/ci-runners-monitor</string>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+</dict>
+</plist>
