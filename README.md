@@ -2,7 +2,7 @@
 
 **A local, read-only control room for GitHub Actions jobs running on disposable personal CI VMs.**
 
-See the queue, running jobs, recent outcomes, runner capacity, and infrastructure incidents in one place. The dashboard combines the GitHub Actions API with the local reservation ledger from the [ci-runners controller](../ci-runners). It does **not** create, start, stop, or delete runners.
+See the queue, running jobs, recent outcomes, runner capacity, and infrastructure incidents in one place. The dashboard combines the GitHub Actions API with the local reservation ledger from the [ci-runners controller](../../../ci-runners). It does **not** create, start, stop, or delete runners.
 
 ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white) ![No extra packages](https://img.shields.io/badge/dependencies-stdlib%20only-6FE0BD) ![Read only](https://img.shields.io/badge/access-read--only-C4F06B) ![MIT license](https://img.shields.io/badge/license-MIT-blue)
 
@@ -33,7 +33,7 @@ The server binds only to `127.0.0.1` and rejects unexpected `Host` headers. API 
 
 ## Get started
 
-1. Set up the [ci-runners controller](../ci-runners), including its `config.json`, GitHub credentials, and local state directory. Keep that configuration **outside this repository**.
+1. Set up the [ci-runners controller](../../../ci-runners), including its `config.json`, GitHub credentials, and local state directory. Keep that configuration **outside this repository**.
 2. Clone this repository anywhere on the **same host** as the controller:
 
    ```sh
